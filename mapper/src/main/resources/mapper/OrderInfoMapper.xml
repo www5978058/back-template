@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzh.back_template.mapper.OrderInfoMapper">
+  <resultMap id="BaseResultMap" type="com.wzh.back_template.domain.OrderInfo">
+    <!--@mbg.generated generated on Tue Jan 07 15:18:27 CST 2020.-->
+    <!--@Table ecs_order_info-->
+    <id column="order_id" jdbcType="INTEGER" property="orderId" />
+    <result column="order_sn" jdbcType="VARCHAR" property="orderSn" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="order_status" jdbcType="BOOLEAN" property="orderStatus" />
+    <result column="shipping_status" jdbcType="BOOLEAN" property="shippingStatus" />
+    <result column="pay_status" jdbcType="BOOLEAN" property="payStatus" />
+    <result column="consignee" jdbcType="VARCHAR" property="consignee" />
+    <result column="country" jdbcType="SMALLINT" property="country" />
+    <result column="province" jdbcType="SMALLINT" property="province" />
+    <result column="city" jdbcType="SMALLINT" property="city" />
+    <result column="district" jdbcType="SMALLINT" property="district" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="zipcode" jdbcType="VARCHAR" property="zipcode" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="best_time" jdbcType="VARCHAR" property="bestTime" />
+    <result column="sign_building" jdbcType="VARCHAR" property="signBuilding" />
+    <result column="postscript" jdbcType="VARCHAR" property="postscript" />
+    <result column="shipping_id" jdbcType="TINYINT" property="shippingId" />
+    <result column="shipping_name" jdbcType="VARCHAR" property="shippingName" />
+    <result column="pay_id" jdbcType="TINYINT" property="payId" />
+    <result column="pay_name" jdbcType="VARCHAR" property="payName" />
+    <result column="how_oos" jdbcType="VARCHAR" property="howOos" />
+    <result column="how_surplus" jdbcType="VARCHAR" property="howSurplus" />
+    <result column="pack_name" jdbcType="VARCHAR" property="packName" />
+    <result column="card_name" jdbcType="VARCHAR" property="cardName" />
+    <result column="card_message" jdbcType="VARCHAR" property="cardMessage" />
+    <result column="inv_payee" jdbcType="VARCHAR" property="invPayee" />
+    <result column="inv_content" jdbcType="VARCHAR" property="invContent" />
+    <result column="goods_amount" jdbcType="DECIMAL" property="goodsAmount" />
+    <result column="shipping_fee" jdbcType="DECIMAL" property="shippingFee" />
+    <result column="insure_fee" jdbcType="DECIMAL" property="insureFee" />
+    <result column="pay_fee" jdbcType="DECIMAL" property="payFee" />
+    <result column="pack_fee" jdbcType="DECIMAL" property="packFee" />
+    <result column="card_fee" jdbcType="DECIMAL" property="cardFee" />
+    <result column="goods_discount_fee" jdbcType="DECIMAL" property="goodsDiscountFee" />
+    <result column="money_paid" jdbcType="DECIMAL" property="moneyPaid" />
+    <result column="surplus" jdbcType="DECIMAL" property="surplus" />
+    <result column="integral" jdbcType="INTEGER" property="integral" />
+    <result column="integral_money" jdbcType="DECIMAL" property="integralMoney" />
+    <result column="bonus" jdbcType="DECIMAL" property="bonus" />
+    <result column="order_amount" jdbcType="DECIMAL" property="orderAmount" />
+    <result column="from_ad" jdbcType="SMALLINT" property="fromAd" />
+    <result column="referer" jdbcType="VARCHAR" property="referer" />
+    <result column="add_time" jdbcType="INTEGER" property="addTime" />
+    <result column="confirm_time" jdbcType="INTEGER" property="confirmTime" />
+    <result column="pay_time" jdbcType="INTEGER" property="payTime" />
+    <result column="shipping_time" jdbcType="INTEGER" property="shippingTime" />
+    <result column="pack_id" jdbcType="TINYINT" property="packId" />
+    <result column="card_id" jdbcType="TINYINT" property="cardId" />
+    <result column="bonus_id" jdbcType="INTEGER" property="bonusId" />
+    <result column="invoice_no" jdbcType="VARCHAR" property="invoiceNo" />
+    <result column="extension_code" jdbcType="VARCHAR" property="extensionCode" />
+    <result column="extension_id" jdbcType="INTEGER" property="extensionId" />
+    <result column="to_buyer" jdbcType="VARCHAR" property="toBuyer" />
+    <result column="pay_note" jdbcType="VARCHAR" property="payNote" />
+    <result column="agency_id" jdbcType="SMALLINT" property="agencyId" />
+    <result column="inv_type" jdbcType="VARCHAR" property="invType" />
+    <result column="tax" jdbcType="DECIMAL" property="tax" />
+    <result column="is_separate" jdbcType="BOOLEAN" property="isSeparate" />
+    <result column="parent_id" jdbcType="INTEGER" property="parentId" />
+    <result column="discount" jdbcType="DECIMAL" property="discount" />
+    <result column="callback_status" jdbcType="OTHER" property="callbackStatus" />
+    <result column="lastmodify" jdbcType="INTEGER" property="lastmodify" />
+    <result column="is_sync" jdbcType="INTEGER" property="isSync" />
+    <result column="after_sale" jdbcType="INTEGER" property="afterSale" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Tue Jan 07 15:18:27 CST 2020.-->
+    order_id, order_sn, user_id, order_status, shipping_status, pay_status, consignee, 
+    country, province, city, district, address, zipcode, tel, mobile, email, best_time, 
+    sign_building, postscript, shipping_id, shipping_name, pay_id, pay_name, how_oos, 
+    how_surplus, pack_name, card_name, card_message, inv_payee, inv_content, goods_amount, 
+    shipping_fee, insure_fee, pay_fee, pack_fee, card_fee, goods_discount_fee, money_paid, 
+    surplus, integral, integral_money, bonus, order_amount, from_ad, referer, add_time, 
+    confirm_time, pay_time, shipping_time, pack_id, card_id, bonus_id, invoice_no, extension_code, 
+    extension_id, to_buyer, pay_note, agency_id, inv_type, tax, is_separate, parent_id, 
+    discount, callback_status, lastmodify, is_sync, after_sale
+  </sql>
+</mapper>

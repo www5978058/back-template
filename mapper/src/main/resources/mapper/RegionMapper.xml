@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzh.back_template.mapper.RegionMapper">
+  <resultMap id="BaseResultMap" type="com.wzh.back_template.domain.Region">
+    <!--@mbg.generated generated on Tue Jan 07 15:18:27 CST 2020.-->
+    <!--@Table ecs_region-->
+    <id column="region_id" jdbcType="SMALLINT" property="regionId" />
+    <result column="parent_id" jdbcType="SMALLINT" property="parentId" />
+    <result column="region_name" jdbcType="VARCHAR" property="regionName" />
+    <result column="region_type" jdbcType="BOOLEAN" property="regionType" />
+    <result column="agency_id" jdbcType="SMALLINT" property="agencyId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Tue Jan 07 15:18:27 CST 2020.-->
+    region_id, parent_id, region_name, region_type, agency_id
+  </sql>
+</mapper>

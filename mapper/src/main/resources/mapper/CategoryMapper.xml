@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzh.back_template.mapper.CategoryMapper">
+  <resultMap id="BaseResultMap" type="com.wzh.back_template.domain.Category">
+    <!--@mbg.generated generated on Tue Jan 07 15:18:27 CST 2020.-->
+    <!--@Table ecs_category-->
+    <id column="cat_id" jdbcType="SMALLINT" property="catId" />
+    <result column="cat_name" jdbcType="VARCHAR" property="catName" />
+    <result column="keywords" jdbcType="VARCHAR" property="keywords" />
+    <result column="cat_desc" jdbcType="VARCHAR" property="catDesc" />
+    <result column="parent_id" jdbcType="SMALLINT" property="parentId" />
+    <result column="sort_order" jdbcType="BOOLEAN" property="sortOrder" />
+    <result column="template_file" jdbcType="VARCHAR" property="templateFile" />
+    <result column="measure_unit" jdbcType="VARCHAR" property="measureUnit" />
+    <result column="show_in_nav" jdbcType="BOOLEAN" property="showInNav" />
+    <result column="style" jdbcType="VARCHAR" property="style" />
+    <result column="is_show" jdbcType="BOOLEAN" property="isShow" />
+    <result column="grade" jdbcType="TINYINT" property="grade" />
+    <result column="filter_attr" jdbcType="VARCHAR" property="filterAttr" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Tue Jan 07 15:18:27 CST 2020.-->
+    cat_id, cat_name, keywords, cat_desc, parent_id, sort_order, template_file, measure_unit, 
+    show_in_nav, `style`, is_show, grade, filter_attr
+  </sql>
+</mapper>
