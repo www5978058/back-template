@@ -10,7 +10,7 @@
     <properties>
         <spring-boot-tk-mybatis.version>2.1.5</spring-boot-tk-mybatis.version>
         <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
-        <jackson-databind.version>2.10.1</jackson-databind.version>
+        <jackson-databind.version>2.9.9.3</jackson-databind.version>
         <google.guava.version>23.0</google.guava.version>
         <pagehelper-spring-boot-starter.version>1.2.10</pagehelper-spring-boot-starter.version>
         <alibaba.easyexcel.version>2.1.4</alibaba.easyexcel.version>

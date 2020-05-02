@@ -8,7 +8,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  * @author wzh
  * @date 2020/1/7 - 15:25
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.wzh.back_template")
 @MapperScan("com.wzh.back_template.mapper")
 public class WebAdminApplication {
     public static void main(String[] args) {
