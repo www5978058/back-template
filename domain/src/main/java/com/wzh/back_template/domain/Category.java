@@ -1,18 +1,21 @@
 package com.wzh.back_template.domain;
 
-import java.io.Serializable;
-import javax.persistence.*;
-import lombok.Builder;
+import com.wzh.back_template.base.BaseEntity;
 import lombok.Data;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
 @author wzh
 @date 2020/1/7 - 15:18
 */
 @Data
-@Builder
 @Table(name = "ecs_category")
-public class Category implements Serializable {
+public class Category extends BaseEntity implements Serializable {
     @Id
     @Column(name = "cat_id")
     @GeneratedValue(generator = "JDBC")
